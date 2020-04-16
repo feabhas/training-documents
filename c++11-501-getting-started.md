@@ -58,6 +58,7 @@ Select 'Open Recent Project'.  This has been set up to launch the target project
 ![download](/images/ready-to-download.png)
 
 2.	Download and run the project on the target by clicking on the green `Download and reset program` option (also `F5`). First time you will be presented with a license dialogue:
+
 ![download](/images/license-message.png)
 
 Tick the `Do not show again` box and then click `Yes`.
