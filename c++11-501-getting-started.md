@@ -30,12 +30,13 @@ The target project is located at
    
 ![mint](/images/mint-desktop.png)
 
-1. To navigate to the project directory type:
+2. To navigate to the project directory type:
 ```
 $ cd ~/course-material/templates/target
 ```
 ![cd ~/course-material/templates/target](/images/terminal-pwd.png)
-2.	Build the project.
+
+3.	Build the project.
 From the command line, type
 ```
 $ scons
