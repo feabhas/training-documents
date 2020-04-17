@@ -53,7 +53,10 @@ You will be prompted with a simple startup wizard:
 
 ![Ozone wizard](/images/Ozone-1.png)
 
-Select 'Open Recent Project'.  This has been set up to launch the target project configuration `C++11-501.jdebug`.
+Select 'Open Recent Project'.  This has been set up to launch the target project configuration `C++11-501.jdebug`. If `C++11-501.jdebug` doesn't appear in the list, then use the `Open Existing Project` option and open the file found at:
+```
+~/course-material/templates/target/C++11-501.jdebug
+```
 
 ![download](/images/ready-to-download.png)
 

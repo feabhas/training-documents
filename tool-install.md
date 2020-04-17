@@ -104,11 +104,15 @@ Finally, some of the exercises use the target serial port. This is connect via U
 
 Minicom is a good tool of choice, and our projects are configured to use minicom. 
 
-To install minicom:
+### To install minicom 
+#### (Debian, Ubuntu, Mint, Kali):
 ```
-sudo apt-get install minicom
+sudo apt install minicom -y
 ```
-
+#### (Fedora, CentOS, RHEL):
+```
+sudo yum install minicom -y
+```
 To test:
 ```
 $ minicom -v
