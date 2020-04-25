@@ -29,18 +29,18 @@ To mimic the LEDs on the Feabhas target board (GPIO-D pins 8..11):
 ```
 0:D6 On
 0:D6 Off
-1:D7 On
-1:D7 Off
+1:D5 On
+1:D5 Off
 0:D6 On
-1:D7 On
+1:D5 On
 0:D6 Off
-1:D7 Off
-2:D8 On
-2:D8 Off
+1:D5 Off
+2:D4 On
+2:D4 Off
 0:D6 On
-2:D8 On
+2:D4 On
 ```
-where D6-D9 map to the board LEDs.
+where D3-D6 map to the board LEDs.
 
 Once `main` exits the `qemu` process will exit and return to the command line.
 
@@ -130,18 +130,18 @@ To mimic the LEDs on the Feabhas target board (GPIO-D pins 8..11):
 ```
 0:D6 On
 0:D6 Off
-1:D7 On
-1:D7 Off
+1:D5 On
+1:D5 Off
 0:D6 On
-1:D7 On
+1:D5 On
 0:D6 Off
-1:D7 Off
-2:D8 On
-2:D8 Off
+1:D5 Off
+2:D4 On
+2:D4 Off
 0:D6 On
-2:D8 On
+2:D4 On
 ```
-where D6-D9 map to the board LEDs.
+where D3-D6 map to the board LEDs.
 
 #### Exiting a session
 To exit:
