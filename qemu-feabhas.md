@@ -22,7 +22,7 @@ then you are trying to simulate an image which has been built for the target rat
 To mimic the LEDs on the Feabhas target board (GPIO-D pins 8..11):
 1. In one terminal invoke the following script:
 ```
-   $ ./qemu-scripts/run_leds.sh
+   $ ./qemu-scripts/run_leds.sh build/debug/Application.elf
 ```
    A monitor window will appear and there will be some debug output, which can be ignore for the moment. Once the programming is running, the state of the LEDs is displayed, e.g.
 
@@ -49,7 +49,7 @@ Once `main` exits the `qemu` process will exit and return to the command line.
 To mimic the WMS outputs (GPIO-D pins 8..15):
 1. In a terminal invoke the following script:
 ```
-   $ ./qemu-scripts/run_qemu.sh
+   $ ./qemu-scripts/run_qemu.sh feabhas-wms build/debug/Application.elf
 ```
    A monitor window will appear and there will be some debug output, which can be ignore for the moment. Once the programming is running, the state of the WMS outputs is displayed, e.g.
 ```
@@ -84,7 +84,7 @@ Once the shell script has been invoke it is listening on `localhost:7777` for a 
 
 To run, in on terminal, invoke the script: 
 ```
-   $ qemu-scripts/run_qemu_serial.sh
+   $ qemu-scripts/run_qemu_serial.sh feabhas-wms build/debug/Application.elf
 ```
    The QEMU simulation will now wait until a telnet connection is made on port `7777`.
 
@@ -113,7 +113,7 @@ $ scons --qemu
 To mimic the LEDs on the Feabhas target board (GPIO-D pins 8..11):
 1. In one terminal invoke the following script:
 ```
-   $ ./qemu-scripts/run_leds_gdb.sh
+   $ ./qemu-scripts/run_leds_gdb.sh build/debug/Application.elf
 ```
    A monitor window will appear and there will be some debug output, which can be ignore for the moment. With the script the qemu simulation will be halted at the first instruction waiting for a GDB connection.
 
@@ -153,7 +153,7 @@ To exit:
 Alternative you can stay in gdb and rerun a session by:
 1. reinvoke qemu as before:
 ```
-   $ ./qemu-scripts/run_leds.sh
+   $ ./qemu-scripts/run_leds.sh build/debug/Application.elf
 ```
 2. rerun the gdb init file
 ```
